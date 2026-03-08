@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Activarsonido : MonoBehaviour
+{
+    public GameObject post;
+    public GameObject post1;
+    private void  OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            //AudioManager.Instance.Play3D("Motor", post.transform.position);
+            AudioManager.Instance.Play2D("Motor");
+        }
+    }
+
+    //private void Update()
+    //{
+        //OnTriggerEnter();
+        //OnTriggerExit();
+    //}
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            //AudioManager.Instance.Play3D("bosina", post1.transform.position);
+            AudioManager.Instance.Play2D("bosina");
+        }
+    }
+}
