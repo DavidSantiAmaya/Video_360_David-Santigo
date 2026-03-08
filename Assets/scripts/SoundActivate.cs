@@ -15,7 +15,7 @@ public class Activarsonido : MonoBehaviour
         }
     }
 
-    //private void Update()
+    //void Update()
     //{
         //OnTriggerEnter();
         //OnTriggerExit();
